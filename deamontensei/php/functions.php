@@ -1,7 +1,4 @@
 
-<!-- functions.php Thomas Crow 7/5/2018 -->
-<!-- Last updated 8/3/2018 -->
-
 <?php
 	$servername = "localhost";
 	$username = "root";
