@@ -11,7 +11,14 @@
 		session_start();
 		include 'functions.php';
 	?>
-	<video width="100%" height="100%" autoplay>
-    <source src="../introassets/intro.mp4" type="video/mp4">
-  </video>
+	<video id="video" autoplay>
+		<source src="../intro_assets/SKZ51LfkKC.mp4" type="video/mp4">
+	</video>
+	<audio id="audio" autoplay>
+		<source src="../intro_assets/videoplayback_2.mp3" type="audio/mpeg">
+	</audio>
+	<script>
+		document.getElementById('video').play();
+		document.getElementById('audio').play();
+	</script>
 </body>
