@@ -17,6 +17,19 @@
 		$result_languages = $conn->query($sql_languages);
 		$result_players = $conn->query($sql_players);
 		
+		while($row = $result_players->fetch_assoc()) {
+				if($row["username"] == $_SESSION["player_username"]){
+					// find the id that matches the new username
+					$_SESSION["player_id"] = $row["id"];
+					$_SESSION["player_hp"] = $row["hp"];
+					$_SESSION["player_str"] = $row["str"];
+					$_SESSION["player_mag"] = $row["mag"];
+					$_SESSION["player_def"] = $row["def"];
+					$_SESSION["player_res"] = $row["res"];
+					$_SESSION["player_agi"] = $row["agi"];
+					$_SESSION["player_luc"] = $row["luc"];
+				}
+			}
 		
 	?>
 	<h1><?php echo $_SESSION['message']; $_SESSION['message'] = NULL; ?></h1>
@@ -42,7 +55,7 @@
 				<br>
 				<tr>
 					<td>hp</td>
-					<td><p><?php  ?></p><input name="hp" id="hp" type="number"></td>
+					<td><p><?php echo $_SESSION["player_hp"]; ?></p><input name="hp" id="hp" type="number"></td>
 				</tr>
 				<tr>
 					<td>str</td>
