@@ -10,4 +10,9 @@
 		die("Connection failed: " . $conn->connect_error);
 	}
 	// Connected successfully
+
+	function script(id, language){
+		$script_result = mysql_query("SELECT $language FROM deamon_tensei.languages WHERE id = '$id'");
+		return mysql_fetch_row($script_result);
+	}
 ?>
