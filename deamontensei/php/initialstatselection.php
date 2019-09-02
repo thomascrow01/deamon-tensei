@@ -11,10 +11,8 @@
 		session_start();
 		include 'functions.php';
 		
-		$sql_languages = "SELECT * FROM deamon_tensei.languages ORDER BY id";
 		$sql_players = "SELECT * FROM deamon_tensei.players ORDER BY id";
 		
-		$result_languages = $conn->query($sql_languages);
 		$result_players = $conn->query($sql_players);
 		
 		while($row = $result_players->fetch_assoc()) {
@@ -54,7 +52,7 @@
 				</tr>
 				<br>
 				<tr>
-					<td>hp</td>
+					<td><?php script(0, $_SESSION["player_language"]) ?></td>
 					<td><p><?php echo $_SESSION["player_hp"]; ?></p><input name="hp" id="hp" type="number"></td>
 				</tr>
 				<tr>
