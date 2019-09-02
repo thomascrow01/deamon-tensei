@@ -16,6 +16,9 @@
 			$language = "en";
 		}
 		$script_result = mysql_query("SELECT $language FROM deamon_tensei.languages WHERE id = '$id'");
+		if(mysql_fetch_row($script_result) == NULL){
+			$script_result = mysql_query("SELECT en FROM deamon_tensei.languages WHERE id = '$id'");
+		}
 		return mysql_fetch_row($script_result);
 	}
 ?>
