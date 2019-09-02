@@ -12,6 +12,9 @@
 	// Connected successfully
 
 	function script(id, language){
+		if($language == NULL){
+			$language = "en";
+		}
 		$script_result = mysql_query("SELECT $language FROM deamon_tensei.languages WHERE id = '$id'");
 		return mysql_fetch_row($script_result);
 	}
