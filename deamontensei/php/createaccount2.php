@@ -39,7 +39,7 @@
 
 		if ($conn->query($sqlplayersadd)) {
 			$_SESSION["message"] = "Player has been added.";
-			$_SESSION["username"] = $createuser_username;
+			$_SESSION["player_username"] = $createuser_username;
 			
 		}else{
 			$_SESSION["message"] = "An error occured.";
