@@ -52,32 +52,32 @@
 				</tr>
 				<br>
 				<tr>
-					<td><?php script(0, $_SESSION["player_language"]) ?></td>
-					<td><p><?php echo $_SESSION["player_hp"]; ?></p><input name="hp" id="hp" type="number"></td>
+					<td><?php script(0, $_SESSION["player_language"]); ?></td>
+					<td><p><?php echo $_SESSION["player_hp"]; ?> → </p><input name="hp" id="statchoice_hp" type="number" value="<?php echo $_SESSION["player_hp"]; ?>"></td>
 				</tr>
 				<tr>
-					<td>str</td>
-					<td><p></p><input name="str" id="str" type="number"></td>
+					<td><?php script(1, $_SESSION["player_language"]); ?></td>
+					<td><p><?php echo $_SESSION["player_str"]; ?> → </p><input name="str" id="statchoice_str" type="number" value="<?php echo $_SESSION["player_str"]; ?>"></td>
 				</tr>
 				<tr>
-					<td>mag</td>
-					<td><p></p><input name="mag" id="mag" type="number"></td>
+					<td><?php script(2, $_SESSION["player_language"])</td>
+					<td><p><?php echo $_SESSION["player_mag"]; ?> → </p><input name="mag" id="statchoice_mag" type="number" value="<?php echo $_SESSION["player_mag"]; ?>"></td>
 				</tr>
 				<tr>
-					<td>def</td>
-					<td><p></p><input name="def" id="def" type="number"></td>
+					<td><?php script(3, $_SESSION["player_language"])</td>
+					<td><p><?php echo $_SESSION["player_def"]; ?> → </p><input name="def" id="statchoice_def" type="number" value="<?php echo $_SESSION["player_def"]; ?>"></td>
 				</tr>
 				<tr>
-					<td>res</td>
-					<td><p></p><input name="res" id="res" type="number"></td>
+					<td><?php script(4, $_SESSION["player_language"])</td>
+					<td><p><?php echo $_SESSION["player_res"]; ?> → </p><input name="res" id="statchoice_res" type="number" value="<?php echo $_SESSION["player_res"]; ?>"></td>
 				</tr>
 				<tr>
-					<td>agi</td>
-					<td><p></p><input name="agi" id="agi" type="number"></td>
+					<td><?php script(5, $_SESSION["player_language"])</td>
+					<td><p><?php echo $_SESSION["player_agi"]; ?> → </p><input name="agi" id="statchoice_agi" type="number" value="<?php echo $_SESSION["player_agi"]; ?>"></td>
 				</tr>
 				<tr>
-					<td>luc</td>
-					<td><p></p><input name="luc" id="luc" type="number"></td>
+					<td><?php script(6, $_SESSION["player_language"])</td>
+					<td><p><?php echo $_SESSION["player_luc"]; ?> → </p><input name="statchoice_luc" id="luc" type="number" value="<?php echo $_SESSION["player_luc"]; ?>"></td>
 				</tr>
 				<tr>
 					<td></td>
