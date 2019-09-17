@@ -22,6 +22,14 @@
 					// if true, the session variable "loggedin" will be set to true.
 					$_SESSION["loggedin"] = true;
 					$_SESSION["player_username"] = $row["username"];
+					$_SESSION["player_id"] = $row["id"];
+					$_SESSION["player_hp"] = $row["hp"];
+					$_SESSION["player_str"] = $row["str"];
+					$_SESSION["player_mag"] = $row["mag"];
+					$_SESSION["player_def"] = $row["def"];
+					$_SESSION["player_res"] = $row["res"];
+					$_SESSION["player_agi"] = $row["agi"];
+					$_SESSION["player_luc"] = $row["luc"];
 					
 					echo "Logged in as " . $_SESSION["player_username"] . <br>;
 				?>
