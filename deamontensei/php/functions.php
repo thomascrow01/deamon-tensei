@@ -31,10 +31,10 @@
 		$color = imagecolorallocatealpha($img, 0, 0, 0, 127);
 		imagefill($img, 0, 0, $color);
 		$text_color = imagecolorallocate($im, 0, 0, 0);
-		imagestring($im, 1, 5, 5,  $_SESSION['player_ap1'], $text_color);
-		imagestring($im, 1, 5, 10,  $_SESSION['player_ap2'], $text_color);
-		imagestring($im, 1, 5, 15,  $_SESSION['player_ap3'], $text_color);
-		imagestring($im, 1, 5, 20,  $_SESSION['player_ap4'], $text_color);
+		imagestring($im, 1, 5, 5,  $_SESSION["player_ap1"], $text_color);
+		imagestring($im, 1, 5, 10,  $_SESSION["player_ap2"], $text_color);
+		imagestring($im, 1, 5, 15,  $_SESSION["player_ap3"], $text_color);
+		imagestring($im, 1, 5, 20,  $_SESSION["player_ap4"], $text_color);
 		return imagepng($im);
 		imagedestroy($im);
 	}
