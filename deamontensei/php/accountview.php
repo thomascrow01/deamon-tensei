@@ -30,6 +30,10 @@
 					$_SESSION["player_res"] = $row["res"];
 					$_SESSION["player_agi"] = $row["agi"];
 					$_SESSION["player_luc"] = $row["luc"];
+					$_SESSION["player_ap1"] = $row["ap1"];
+					$_SESSION["player_ap2"] = $row["ap2"];
+					$_SESSION["player_ap3"] = $row["ap3"];
+					$_SESSION["player_ap4"] = $row["ap4"];
 					
 					echo "Logged in as " . $_SESSION["player_username"] . <br>;
 				?>
