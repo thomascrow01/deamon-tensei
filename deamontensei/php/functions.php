@@ -25,7 +25,7 @@
 	}
 
 	// function to retrieve image of player
-	function playerimage($_SESSION["ap1"], $_SESSION["ap2"], $_SESSION["ap3"], $_SESSION["ap4"]){
+	function playerimage($_SESSION["player_ap1"], $_SESSION["player_ap2"], $_SESSION["player_ap3"], $_SESSION["player_ap4"]){
 		$img = imagecreatetruecolor(200, 200);
 		imagesavealpha($img, true);
 		$color = imagecolorallocatealpha($img, 0, 0, 0, 127);
