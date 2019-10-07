@@ -13,7 +13,7 @@
 
 
 	// function to retrieve string for specific language
-	function script(id, language){
+	function script($id, $language){
 		if($language == NULL){
 			$language = "en";
 		}
