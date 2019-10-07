@@ -14,7 +14,7 @@
 	<h1><?php echo $_SESSION['message']; $_SESSION['message'] = NULL; ?></h1>
 	<div>
 		<p>warning do not use real password as this currently unsecure so use a test password or something</p>
-		<form action="intro.php" method="POST">
+		<form action="createaccount2.php" method="POST">
 			<table>
 				<tr>
 					<td>Username</td>
