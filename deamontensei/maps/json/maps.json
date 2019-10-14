@@ -1,0 +1,56 @@
+{
+    {
+        "map_name": "test",
+        "map_spawnrate":0.2,
+        "background_images": ["../maps/background_images/testb.png"],
+        "floor_images":["../maps/floor_images/testf.png"],
+        "wall_images":["../maps/wall_images/testw.png", "../maps/wall_images/testw2.png"],
+        "map_tiles":{
+            "tile_1-1":{
+                "tile_floor":0,
+                "tile_wall":[0,NULL,NULL,0],
+                "tile_collision":[true,false,false,true],
+            },
+            "tile_2-1":{
+                "tile_floor":0,
+                "tile_wall":[0,1,NULL,NULL],
+                "tile_collision":[true,false,false,false],
+            },
+            "tile_3-1":{
+                "tile_floor":0,
+                "tile_wall":[0,0,1,1],
+                "tile_collision":[true,true,false,false],
+            },
+            "tile_1-2":{
+                "tile_floor":0,
+                "tile_wall":[NULL,NULL,NULL,0],
+                "tile_collision":[false,false,false,true],
+            },
+            "tile_2-2":{
+                "tile_floor":0,
+                "tile_wall":[NULL,NULL,NULL,NULL],
+                "tile_collision":[false,false,false,false],
+            },
+            "tile_3-2":{
+                "tile_floor":0,
+                "tile_wall":[1,0,NULL,NULL],
+                "tile_collision":[false,true,false,false],
+            },
+            "tile_1-3":{
+                "tile_floor":0,
+                "tile_wall":[NULL,NULL,0,0],
+                "tile_collision":[false,false,true,true],
+            },
+            "tile_2-3":{
+                "tile_floor":0,
+                "tile_wall":[NULL,NULL,0,NULL],
+                "tile_collision":[false,false,true,false],
+            },
+            "tile_3-3":{
+                "tile_floor":0,
+                "tile_wall":[NULL,0,0,NULL],
+                "tile_collision":[false,true,true,false],
+            }
+        },
+    }
+}
