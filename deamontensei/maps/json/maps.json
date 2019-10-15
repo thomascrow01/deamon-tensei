@@ -1,5 +1,5 @@
 {
-    {
+    "maps":{
         "map_name": "test",
         "map_spawnrate":0.2,
         "background_images": ["../maps/background_images/testb.png"],
@@ -8,12 +8,12 @@
         "map_tiles":{
             "tile_1-1":{
                 "tile_floor":0,
-                "tile_wall":[0,NULL,NULL,0],
+                "tile_wall":[0,null,null,0],
                 "tile_collision":[true,false,false,true],
             },
             "tile_2-1":{
                 "tile_floor":0,
-                "tile_wall":[0,1,NULL,NULL],
+                "tile_wall":[0,1,null,null],
                 "tile_collision":[true,false,false,false],
             },
             "tile_3-1":{
@@ -23,34 +23,34 @@
             },
             "tile_1-2":{
                 "tile_floor":0,
-                "tile_wall":[NULL,NULL,NULL,0],
+                "tile_wall":[null,null,null,0],
                 "tile_collision":[false,false,false,true],
             },
             "tile_2-2":{
                 "tile_floor":0,
-                "tile_wall":[NULL,NULL,NULL,NULL],
+                "tile_wall":[null,null,null,null],
                 "tile_collision":[false,false,false,false],
             },
             "tile_3-2":{
                 "tile_floor":0,
-                "tile_wall":[1,0,NULL,NULL],
+                "tile_wall":[1,0,null,null],
                 "tile_collision":[false,true,false,false],
             },
             "tile_1-3":{
                 "tile_floor":0,
-                "tile_wall":[NULL,NULL,0,0],
+                "tile_wall":[null,null,0,0],
                 "tile_collision":[false,false,true,true],
             },
             "tile_2-3":{
                 "tile_floor":0,
-                "tile_wall":[NULL,NULL,0,NULL],
+                "tile_wall":[null,null,0,null],
                 "tile_collision":[false,false,true,false],
             },
             "tile_3-3":{
                 "tile_floor":0,
-                "tile_wall":[NULL,0,0,NULL],
+                "tile_wall":[null,0,0,null],
                 "tile_collision":[false,true,true,false],
-            }
+            },
         },
-    }
+    },
 }
