@@ -1,5 +1,5 @@
 {
-    "maps":{
+    "maps":[{
         "map_name": "test",
         "map_spawnrate":0.2,
         "background_images": ["../maps/background_images/testb.png"],
@@ -52,5 +52,5 @@
                 "tile_collision":[false,true,true,false],
             },
         },
-    },
+    },]
 }
