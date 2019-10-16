@@ -1,7 +1,9 @@
 {
     "maps":[{
         "map_name": "test",
+        "map_startingpoint":[1,1],
         "map_spawnrate":0.2,
+        "map_events":[0,1],
         "background_images": ["../maps/background_images/testb.png"],
         "floor_images":["../maps/floor_images/testf.png"],
         "wall_images":["../maps/wall_images/testw.png", "../maps/wall_images/testw2.png"],
@@ -23,6 +25,7 @@
                 "tile_floor":0,
                 "tile_wall":[0,0,1,1],
                 "tile_collision":[true,true,false,false],
+                "tile_event":0,
             },},{
             "tile":{
                 "tile_coords":[1,2],
@@ -35,6 +38,7 @@
                 "tile_floor":0,
                 "tile_wall":[null,null,null,null],
                 "tile_collision":[false,false,false,false],
+                "tile_event":1,
             },},{
             "tile":{
                 "tile_coords":[3,2],
