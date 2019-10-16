@@ -97,6 +97,40 @@ a {
     }
 }
 
+@keyframes eamon {
+    0% {
+        opacity: 0;
+        right: -50%;
+    }
+    30% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        right: 55%;
+    }
+}
+
+@keyframes fire {
+    0% {
+        opacity: 0;
+        right: -70%;
+    }
+    30% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        right: 55%;
+    }
+}
+
 
 /*pls say sike*/
 
@@ -107,6 +141,15 @@ a {
     opacity: 0.5;
     padding: 50%;
     bottom: 50%;
+}
+
+#black {
+    z-index: -1;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+    padding: 50%;
+    top: 50%;
 }
 
 #animben {
@@ -132,4 +175,32 @@ a {
     animation-duration: 15s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+}
+
+#animeamon {
+    opacity: 0;
+    z-index: -2;
+    top: 50%;
+    position: absolute;
+    height: 50%;
+    animation-fill-mode: forwards;
+    animation-name: eamon;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+}
+
+#animfire {
+    opacity: 0;
+    z-index: -3;
+    top: 50%;
+    position: absolute;
+    height: 50%;
+    animation-fill-mode: forwards;
+    animation-name: fire;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
 }
