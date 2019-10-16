@@ -1,6 +1,6 @@
-document.getElementById('video').play();
-document.getElementById('audio').play();
-document.getElementById('audio').addEventListener('ended', endVideo, false);
+// document.getElementById('video').play();
+// document.getElementById('audio').play();
+// document.getElementById('audio').addEventListener('ended', endVideo, false);
 
 function endVideo() {
     var video = document.getElementById('video');
