@@ -5,52 +5,61 @@
         "background_images": ["../maps/background_images/testb.png"],
         "floor_images":["../maps/floor_images/testf.png"],
         "wall_images":["../maps/wall_images/testw.png", "../maps/wall_images/testw2.png"],
-        "map_tiles":{
-            "tile_1-1":{
+        "map_tiles":{[
+            "tile":{
+                "tile_coords":[1,1],
                 "tile_floor":0,
                 "tile_wall":[0,null,null,0],
                 "tile_collision":[true,false,false,true],
             },
-            "tile_2-1":{
+            "tile":{
+                "tile_coords":[2,1],
                 "tile_floor":0,
                 "tile_wall":[0,1,null,null],
                 "tile_collision":[true,false,false,false],
             },
-            "tile_3-1":{
+            "tile":{
+                "tile_coords":[3,1],
                 "tile_floor":0,
                 "tile_wall":[0,0,1,1],
                 "tile_collision":[true,true,false,false],
             },
-            "tile_1-2":{
+            "tile":{
+                "tile_coords":[1,2],
                 "tile_floor":0,
                 "tile_wall":[null,null,null,0],
                 "tile_collision":[false,false,false,true],
             },
-            "tile_2-2":{
+            "tile":{
+                "tile_coords":[2,2],
                 "tile_floor":0,
                 "tile_wall":[null,null,null,null],
                 "tile_collision":[false,false,false,false],
             },
-            "tile_3-2":{
+            "tile":{
+                "tile_coords":[3,2],
                 "tile_floor":0,
                 "tile_wall":[1,0,null,null],
                 "tile_collision":[false,true,false,false],
             },
-            "tile_1-3":{
+            "tile":{
+                "tile_coords":[1,3],
                 "tile_floor":0,
                 "tile_wall":[null,null,0,0],
                 "tile_collision":[false,false,true,true],
             },
-            "tile_2-3":{
+            "tile":{
+                "tile_coords":[2,3],
                 "tile_floor":0,
                 "tile_wall":[null,null,0,null],
                 "tile_collision":[false,false,true,false],
             },
-            "tile_3-3":{
+            "tile":{
+                "tile_coords":[3,3],
                 "tile_floor":0,
                 "tile_wall":[null,0,0,null],
                 "tile_collision":[false,true,true,false],
             },
-        },
+        ]},
     },]
 }
