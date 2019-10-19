@@ -131,25 +131,12 @@ a {
     }
 }
 
-
-/*pls say sike*/
-
-#white {
+#layer {
     z-index: -1;
-    background-color: white;
     position: absolute;
     opacity: 0.5;
-    padding: 50%;
-    bottom: 50%;
-}
-
-#black {
-    z-index: -1;
-    background-color: black;
-    position: absolute;
-    opacity: 0.5;
-    padding: 50%;
-    top: 50%;
+    padding: 100%;
+    background-image: linear-gradient(white 50%, black 50%);
 }
 
 #animben {
