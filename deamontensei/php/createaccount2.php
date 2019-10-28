@@ -40,9 +40,11 @@
 		if ($conn->query($sqlplayersadd)) {
 			$_SESSION["message"] = "Player has been added.";
 			$_SESSION["player_username"] = $createuser_username;
+			?> <script>window.location.replace("initialstatselection.php");</script> <?php
 			
 		}else{
 			$_SESSION["message"] = "An error occured.";
+			?> <script>window.location.replace("createaccount.php");</script> <?php
 		}
 	?>
 </body>
